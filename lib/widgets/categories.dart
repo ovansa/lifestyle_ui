@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:lifestyle_ui/screens/music.dart';
 import 'package:lifestyle_ui/styles/textstyles.dart';
 
 class Categories extends StatefulWidget {
@@ -38,15 +39,20 @@ class _CategoriesState extends State<Categories> {
             ],
           ),
         ),
-        Container(
-          decoration: BoxDecoration(
-              color: Color(0xFFd5d7ff),
-              borderRadius: BorderRadius.circular(20.0)
-          ),child: Stack(
-          children: <Widget>[
-            Positioned(child: Text("Pieceful\nThoughts", style: titles,), top: 15.0, left: 15.0,)
-          ],
-        ),
+        GestureDetector(
+          onTap: () {
+            Navigator.push(context, MaterialPageRoute(builder: (context) => Music()));
+          },
+          child: Container(
+            decoration: BoxDecoration(
+                color: Color(0xFFd5d7ff),
+                borderRadius: BorderRadius.circular(20.0)
+            ),child: Stack(
+            children: <Widget>[
+              Positioned(child: Text("Pieceful\nThoughts", style: titles,), top: 15.0, left: 15.0,)
+            ],
+          ),
+          ),
         ),
         Container(
           decoration: BoxDecoration(

@@ -26,7 +26,20 @@ class _SampleState extends State<Sample> {
             color: Color(0xFF4f3c75),
             height: MediaQuery.of(context).size.height * 0.15,
           )
-
+//          Container(
+//            child: Slider(
+//                min: 30,
+//                max: 100,
+//                divisions: 100,
+//                activeColor: Color(0xFF4f3c75),
+//                inactiveColor: Color(0xFF4f3c75).withOpacity(0.3),
+//                value: theValue.toDouble(), onChanged: (double newValue) {
+//              setState(() {
+//                theValue = newValue.round();
+//              });
+//            }
+//            ),
+//          )
         ],
       ),
     );
