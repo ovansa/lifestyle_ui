@@ -23,19 +23,19 @@ class _CategoriesState extends State<Categories> {
           child: Stack(
             children: <Widget>[
               Container(
-                decoration: BoxDecoration(color: Color(0xFFffcdb4),
+                decoration: BoxDecoration(color: Color(0xFFd5d7ff),
                     borderRadius: BorderRadius.circular(20.0)),
               ),
               Positioned(
                   left: 20.0, top: 20.0, child: Text("Calm \nHighlights", style: titles)),
-//              Positioned(
-//                right: 0,
-//                bottom: 0,
-//                child: Container(
-//                  width: 100,
-//                  child: Image.asset("assets/mother.png"),
-//                ),
-//              )
+              Align(
+                alignment: Alignment.bottomCenter,
+                child: Container(
+                  height: 170.0,
+                  width: 200.0,
+                  child: Image.asset("assets/dream.png"),
+                ),
+              )
             ],
           ),
         ),
@@ -49,7 +49,15 @@ class _CategoriesState extends State<Categories> {
                 borderRadius: BorderRadius.circular(20.0)
             ),child: Stack(
             children: <Widget>[
-              Positioned(child: Text("Pieceful\nThoughts", style: titles,), top: 15.0, left: 15.0,)
+              Positioned(child: Text("Pieceful\nThoughts", style: titles,), top: 15.0, left: 15.0,),
+              Align(
+                alignment: Alignment.bottomRight,
+                child: Container(
+                  height: 150.0,
+                  width: 150.0,
+                  child: Image.asset("assets/super_woman.png", fit: BoxFit.fitHeight,),
+                ),
+              )
             ],
           ),
           ),
@@ -61,7 +69,15 @@ class _CategoriesState extends State<Categories> {
           ),
           child: Stack(
             children: <Widget>[
-              Positioned(child: Text("Life\nGratitude", style: titles,), top: 15.0, left: 15.0,)
+              Positioned(child: Text("Life\nGratitude", style: titles,), top: 15.0, left: 15.0,),
+              Align(
+                alignment: Alignment.bottomRight,
+                child: Container(
+                  height: 60.0,
+                  width: 80.0,
+                  child: Image.asset("assets/family_meal.png", fit: BoxFit.fill,),
+                ),
+              )
             ],
           ),
         ),
@@ -71,7 +87,15 @@ class _CategoriesState extends State<Categories> {
               borderRadius: BorderRadius.circular(20.0)
           ),child: Stack(
           children: <Widget>[
-            Positioned(child: Text("Love\nYourself", style: titles,), top: 15.0, left: 15.0,)
+            Positioned(child: Text("Love\nYourself", style: titles,), top: 15.0, left: 15.0,),
+            Align(
+              alignment: Alignment.bottomRight,
+              child: Container(
+                width: 150.0,
+                height: 150.0,
+                child: Image.asset("assets/heart_face.png", fit: BoxFit.fill,),
+              ),
+            )
           ],
         ),
         ),
@@ -81,7 +105,15 @@ class _CategoriesState extends State<Categories> {
               borderRadius: BorderRadius.circular(20.0)
           ),child: Stack(
           children: <Widget>[
-            Positioned(child: Text("Self\nConfidence", style: titles,), top: 15.0, left: 15.0,)
+            Positioned(child: Text("Self\nConfidence", style: titles,), top: 15.0, left: 15.0,),
+            Align(
+              alignment: Alignment.bottomRight,
+              child: Container(
+                width: 80.0,
+                height: 50.0,
+                child: Image.asset("assets/eating_ice_cream.png", fit: BoxFit.fill,),
+              ),
+            )
           ],
         ),
         ),
