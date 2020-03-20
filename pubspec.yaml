@@ -49,6 +49,11 @@ flutter:
   assets:
     - assets/olivia.jpg
     - assets/mother.png
+    - assets/super_woman.png
+    - assets/dream.png
+    - assets/heart_face.png
+    - assets/family_meal.png
+    - assets/eating_ice_cream.png
 
   # To add assets to your application, add an assets section, like this:
   # assets:
